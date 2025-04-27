@@ -1,7 +1,7 @@
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, EmailStr
 
 
 class NoticeSchema(BaseModel):
-    to_mail: str
+    to_mail: EmailStr
     subject: str
     message: str
