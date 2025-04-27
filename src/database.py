@@ -1,8 +1,9 @@
 from typing import Annotated
 from fastapi import Depends
 from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine, AsyncSession
+from src.properties import DATABASE_URL
 
-engine = create_async_engine('sqlite+aiosqlite://', echo=True)
+engine = create_async_engine(DATABASE_URL, echo=True)
 session = async_sessionmaker(engine, expire_on_commit=False)
 
 
