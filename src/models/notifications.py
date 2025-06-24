@@ -12,6 +12,6 @@ class NotificationModel(Base):
     to_email: Mapped[str] = mapped_column(String(80))
     subject: Mapped[str] = mapped_column(String(80))
     message: Mapped[str] = mapped_column(Text)
-    scheduled_at: Mapped[datetime] = mapped_column(TIMESTAMP)
+    scheduled_at: Mapped[datetime] = mapped_column(TIMESTAMP(timezone=True))
     status: Mapped[bool] = mapped_column(Boolean, default=False)
-    created_at: Mapped[datetime] = mapped_column(TIMESTAMP, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(TIMESTAMP(timezone=True), default=datetime.utcnow)
