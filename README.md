@@ -42,6 +42,9 @@ The ready-made code for creating and populating the database from the [schema.sq
 
 The next step is to change the database path. This should be done by opening the [database.py](./src/database.py) file and inserting the desired path into the `DATABASE_URL` field.
 
+### Work with scheduler
+Once the database is created and all the data is customized for you, you need to run scheduler-api (You can read how to configure it to work [here](https://github.com/Temka0994/scheduler-api/blob/main/README.md)).
+
 ### Final step
 After all this, you can run the application with the command:
 ```bash 
