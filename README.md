@@ -17,3 +17,10 @@ After this navigate to the email-notification-api folder:
 ```bash
 cd notificationAPI
 ```
+### Requirements
+Additionally, all the requirements should be downloaded using the following command:
+```bash
+pip install -r requirements.txt
+```
+### Database
+The ready-made code for creating and populating the database from the [schema.sql](./src/schema.sql) file can be used, or a custom script may be created. The attached file contains queries for both table creation and data insertion. The database will appear as follows:
