@@ -46,7 +46,7 @@ The next step is to change the database path. This should be done by opening the
 Once the database is created and all the data is customized for you, you need to run scheduler-api (You can read how to configure it to work [here](https://github.com/Temka0994/scheduler-api/blob/main/README.md)).
 
 ### Final step
-Firstly, you need to run the Schedule application with the command:
+Firstly, you need to run the Scheduler application with the command:
 ```bash 
 uvicorn src.main:app --reload --port 8001
 ```
