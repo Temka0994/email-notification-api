@@ -1,4 +1,4 @@
-﻿# email-notification-api
+﻿# Email Notification Api
 This project is a web service developed using FastAPI as a backend framework and PostgreSQL as a database management system. Also, a scheduler was developed to make the application fully functional. The scheduler also uses FastAPI, but MongoDB was used as the database management system.
 The API helps to realize sending emails at the scheduled time with the scheduled text.
 # Techonology Stack
